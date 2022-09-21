@@ -17,7 +17,9 @@ function setupCounter(element: HTMLButtonElement) {
 }
 
 window.addEventListener("load", () => {
-  setupCounter(document.querySelector<HTMLButtonElement>("#counter")!);
+  document
+    .querySelectorAll<HTMLButtonElement>("#counter")
+    .forEach((element) => setupCounter(element));
 });
 
-export const Counter = Handlebars.compile(template);
+Handlebars.registerPartial("Counter", template);

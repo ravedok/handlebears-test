@@ -1,9 +1,6 @@
 import "./styles.sass";
-import { Title, Counter } from "./components";
+import { Layout } from "./components";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
-  <div>
-    ${Title({ name: "New World" })}
-    ${Counter({})}    
-  </div>
+  ${Layout({ title: "Mundo" })}  
 `;
