@@ -4,7 +4,7 @@ import "../Counter/Counter";
 
 const template = `
     <div>
-        {{>Title name='World'}}
+        {{#Title}}Cervezas{{/Title}}
         {{> Counter}}
     </div>
 `;

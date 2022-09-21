@@ -1,5 +1,7 @@
 import Handlebars from "handlebars";
 
-const template = "<h1>Hello {{name}}</h1>";
+const template = "<h1>{{content}}</h1>";
 
-Handlebars.registerPartial("Title", template);
+Handlebars.registerHelper("Title", (options) =>
+  Handlebars.compile(template)({ content: options.fn(this) })
+);
