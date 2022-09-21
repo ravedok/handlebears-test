@@ -1,5 +1,5 @@
 import Handlebars from "handlebars";
-import "./styles.scss";
+import "./product-card.scss";
 import "../../utils/currency-format";
 
 const template = `

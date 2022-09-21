@@ -1,7 +1,7 @@
 import Handlebars from "handlebars";
-import "../Title/Title";
-import "../Counter/Counter";
-import "../ProductList/ProductList";
+import "../title/title";
+import "../counter/counter";
+import "../product-list/product-list";
 
 const template = `
     <div>

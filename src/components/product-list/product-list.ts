@@ -1,7 +1,7 @@
 import Handlebars from "handlebars";
 import { getProducts } from "../../api/getProducts";
-import "../ProductCard/ProductCard";
-import "./styles.scss";
+import "../product-card/product-card";
+import "./product-list.scss";
 
 const products = getProducts();
 

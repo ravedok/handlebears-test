@@ -1,5 +1,5 @@
 import Handlebars from "handlebars";
-import "./styles.scss";
+import "./title.scss";
 
 const template = `<h1 class="title">{{content}}</h1>`;
 
